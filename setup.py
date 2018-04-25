@@ -1,13 +1,13 @@
-from distutils.core import setup
+from setuptools import setup
 
 GNACS_VERSION_NUMBER = "1.0.1"
 
 if '__main__' == __name__:
     setup(
-        name='gnacs',
+        name='gnacs-updated',
         version=GNACS_VERSION_NUMBER,
         author='Scott Hendrickson, Josh Montague, Jinsub Hong, Jeff Kolb, Brian Lehman, Fiona Pigott, Nikhil Sulegaon',
-        author_email='drskippy@twitter.com; nikhilsulegaon@gmail.com',
+        author_email='nikhilsulegaon@gmail.com',
         packages=['acscsv'],
         scripts=['gnacs.py'],
         url='https://github.com/nikhilsu/Gnacs',
