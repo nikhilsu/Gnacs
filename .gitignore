@@ -31,3 +31,5 @@ MANIFEST
 # mysql branch-specific
 gnacs_db
 
+# Pycharm
+.idea/

@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-__author__="Josh Montague, Scott Hendrickson"
+__author__="Josh Montague, Scott Hendrickson, Nikhil Sulegaon"
 __license__="Simplified BSD"
 
 import sys
@@ -68,7 +68,7 @@ class Field_verb(_Field):
 class Field_id(_Field):
     """Take a dict, assign to self.value the value in the top-level id key.""" 
     label = 'Tweet ID'
-    path = ['id']
+    path = ['id_str']
     
     def __init__(self, json_record):
         super(
@@ -105,7 +105,7 @@ class Field_postedtime(_Field):
     formatted according to input_fmt, which is set in the constructor.
     """
     label = 'Posted Time'
-    path = ['postedTime']
+    path = ['created_at']
 
     # keep this around for possible regex+uniform output extension
 #    def __init__(self, json_record):
@@ -136,7 +136,7 @@ class Field_link(_Field):
 class Field_twitter_lang(_Field):
     """Take a dict, assign to self.value the value of top-level twitter_lang key."""
     label = 'Twitter-Inferred Activity Language'
-    path = ['twitter_lang']
+    path = ['lang']
     
 
 class Field_favoritescount(_Field):
