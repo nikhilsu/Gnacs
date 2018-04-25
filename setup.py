@@ -4,7 +4,7 @@ GNACS_VERSION_NUMBER = "1.0.1"
 
 if '__main__' == __name__:
     setup(
-        name='gnacs-updated',
+        name='gnacsupdated',
         version=GNACS_VERSION_NUMBER,
         author='Scott Hendrickson, Josh Montague, Jinsub Hong, Jeff Kolb, Brian Lehman, Fiona Pigott, Nikhil Sulegaon',
         author_email='nikhilsulegaon@gmail.com',
